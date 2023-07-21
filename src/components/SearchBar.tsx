@@ -1,4 +1,11 @@
-import { Flex, HStack, Input, InputGroup, InputRightElement, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  HStack,
+  Input,
+  InputGroup,
+  InputRightElement,
+  Link,
+} from "@chakra-ui/react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import { BsSearch } from "react-icons/bs";

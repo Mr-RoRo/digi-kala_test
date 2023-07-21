@@ -16,9 +16,9 @@ const NavBar = () => {
           <GrMenu size="25px" />
         </Link>
       </HStack>
-      <Divider marginBottom={2}/>
+      <Divider marginBottom={2} />
       <SearchBar />
-      <Divider marginTop={2}/>
+      <Divider marginTop={2} />
       <SelectCity />
     </>
   );
