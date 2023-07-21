@@ -1,20 +1,17 @@
-import { HStack, Link, Image, Divider } from "@chakra-ui/react";
-import { GrMenu } from "react-icons/gr";
+import { HStack, Image, Divider } from "@chakra-ui/react";
+
 import logo from "../assets/logo.svg";
 import { SearchBar } from "./SearchBar";
 import { SelectCity } from "./SelectCity";
 import SupportOnline from "./SupportOnline";
+import { MenuMobile } from "./MenuMobile";
 const NavBar = () => {
   return (
     <>
       <HStack marginBottom={3} justifyContent="space-between">
-        <Link>
-          <SupportOnline />
-        </Link>
+        <SupportOnline />
         <Image src={logo} />
-        <Link>
-          <GrMenu size="25px" />
-        </Link>
+        <MenuMobile />
       </HStack>
       <Divider marginBottom={2} />
       <SearchBar />

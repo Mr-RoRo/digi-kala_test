@@ -3,7 +3,6 @@ import {
   GridItem,
   IconButton,
   Image,
-  Link,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -31,30 +30,30 @@ function OtherCompany() {
     >
       {companyImage.map((image, index) => (
         <GridItem key={index}>
+            <a href="#">
           <VStack>
-            <Link>
               <Image boxSize="50px" src={image} />
-            </Link>
             <Text textAlign="center" fontSize="12px">
               {textMap[index]}
             </Text>
           </VStack>
+            </a>
         </GridItem>
       ))}
       <GridItem>
+          <a href="#">
         <VStack>
-          <Link>
             <IconButton
               borderRadius="100%"
               boxSize="50px"
               aria-label={"More"}
               icon={<BsThreeDots />}
             ></IconButton>
-          </Link>
           <Text textAlign="center" fontSize="12px">
             بیشتر
           </Text>
         </VStack>
+          </a>
       </GridItem>
     </Grid>
   );
