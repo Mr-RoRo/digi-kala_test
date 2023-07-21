@@ -22,11 +22,14 @@ const ImgaeSlider = () => {
   };
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       handleForward();
     }, 5000);
-  },[index]);
 
+    return () => {
+      clearInterval(interval);
+    };
+  }, [index]);
   return (
     <>
       <Box position="relative">
