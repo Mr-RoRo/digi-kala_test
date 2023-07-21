@@ -29,7 +29,7 @@ const ImgaeSlider = () => {
 
   return (
     <>
-      <Box>
+      <Box position="relative">
         <Image objectFit={"cover"} w="100%" h={"17rem"} src={images[index]} />
         <ButtonGroup position="absolute" bottom="7" right="2">
           <IconButton

@@ -1,6 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import ImgaeSlider from "./components/ImgaeSlider";
+import OtherCompany from "./components/OtherCompany";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </GridItem>
       <GridItem area={"main"}>
         <ImgaeSlider />
+        <OtherCompany />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>
