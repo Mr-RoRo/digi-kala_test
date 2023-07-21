@@ -1,5 +1,4 @@
 import { HStack, Link, Image, Divider } from "@chakra-ui/react";
-
 import { GrMenu } from "react-icons/gr";
 import logo from "../assets/logo.svg";
 import { SearchBar } from "./SearchBar";
@@ -10,7 +9,7 @@ const NavBar = () => {
     <>
       <HStack marginBottom={3} justifyContent="space-between">
         <Link>
-        <SupportOnline />
+          <SupportOnline />
         </Link>
         <Image src={logo} />
         <Link>

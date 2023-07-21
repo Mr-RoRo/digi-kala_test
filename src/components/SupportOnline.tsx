@@ -9,11 +9,17 @@ import {
   DrawerBody,
   Text,
   Heading,
+  DrawerFooter,
+  Button,
+  ButtonGroup,
+  VStack,
 } from "@chakra-ui/react";
 import { HiArrowLeft } from "react-icons/hi";
 import { GrLocation } from "react-icons/gr";
 import { IoIosArrowBack } from "react-icons/io";
 import { BsQuestionSquare } from "react-icons/bs";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import SupportQuestions from "./SupportQuestions";
 
 const SupportOnline = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -59,7 +65,19 @@ const SupportOnline = () => {
             <Text fontSize="14px">
               😊 .در غیر اینصورت از ما بپرسید، ما همیشه به سوالاتتون جواب می‌دیم
             </Text>
+            <SupportQuestions />
           </DrawerBody>
+          <DrawerFooter  justifyContent="center">
+            <VStack>
+                <Text>
+                    جواب سوالتون رو پیدا نکردید ؟
+                </Text>
+                    <Button color="#fff" colorScheme="cyan">
+                        <MdKeyboardArrowLeft />
+                    گفتگو با پشتیبان آنلاین
+                    </Button>
+            </VStack>
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>
