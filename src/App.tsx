@@ -5,7 +5,7 @@ import ImgaeSlider from "./components/ImgaeSlider";
 function App() {
   return (
     <Grid templateAreas={`"nav" "main" "footer"`}>
-      <GridItem padding={3} area={"nav"}>
+      <GridItem padding="12px 12px 5px 12px" area={"nav"}>
         <NavBar />
       </GridItem>
       <GridItem area={"main"}>

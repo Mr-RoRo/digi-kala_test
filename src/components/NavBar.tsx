@@ -1,15 +1,16 @@
 import { HStack, Link, Image, Divider } from "@chakra-ui/react";
-import { BsQuestionSquare } from "react-icons/bs";
+
 import { GrMenu } from "react-icons/gr";
 import logo from "../assets/logo.svg";
 import { SearchBar } from "./SearchBar";
 import { SelectCity } from "./SelectCity";
+import SupportOnline from "./SupportOnline";
 const NavBar = () => {
   return (
     <>
       <HStack marginBottom={3} justifyContent="space-between">
         <Link>
-          <BsQuestionSquare size="25px" />
+        <SupportOnline />
         </Link>
         <Image src={logo} />
         <Link>

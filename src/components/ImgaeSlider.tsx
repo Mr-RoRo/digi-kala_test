@@ -24,8 +24,8 @@ const ImgaeSlider = () => {
   useEffect(() => {
     setInterval(() => {
       handleForward();
-    }, 3000);
-  });
+    }, 5000);
+  },[index]);
 
   return (
     <>
