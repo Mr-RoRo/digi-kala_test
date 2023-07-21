@@ -3,6 +3,7 @@ import { BsQuestionSquare } from "react-icons/bs";
 import { GrMenu } from "react-icons/gr";
 import logo from "../assets/logo.svg";
 import { SearchBar } from "./SearchBar";
+import { SelectCity } from "./SelectCity";
 const NavBar = () => {
   return (
     <>
@@ -17,7 +18,8 @@ const NavBar = () => {
       </HStack>
       <Divider marginBottom={2}/>
       <SearchBar />
-      
+      <Divider marginTop={2}/>
+      <SelectCity />
     </>
   );
 };

@@ -1,6 +1,7 @@
-import { Flex, HStack, Input, Link } from "@chakra-ui/react";
+import { Flex, HStack, Input, InputGroup, InputRightElement, Link } from "@chakra-ui/react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
+import { BsSearch } from "react-icons/bs";
 
 export const SearchBar = () => {
   return (
@@ -14,7 +15,10 @@ export const SearchBar = () => {
           <BiLogIn size="25px" />
         </Flex>
       </Link>
-      <Input background="gray.100" textAlign={"right"} placeholder="جستجو" />
+      <InputGroup>
+        <InputRightElement children={<BsSearch />} />
+        <Input background="gray.100" placeholder="جستجو" />
+      </InputGroup>
     </HStack>
   );
 };
