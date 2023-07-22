@@ -10,6 +10,7 @@ import {
   Image,
   Text,
   Icon,
+  Heading,
   Divider,
 } from "@chakra-ui/react";
 import { GrMenu } from "react-icons/gr";
@@ -42,22 +43,23 @@ export const MenuMobile = () => {
       ></IconButton>
       <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="xs">
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">
+        <DrawerContent >
+          <DrawerHeader  borderBottomWidth="1px">
             <HStack dir="rtl" justifyContent="space-between">
               <Image w="90px" src={digiFa} />
             </HStack>
           </DrawerHeader>
-          <DrawerBody dir="rtl">
+          <DrawerBody paddingX="0" dir="rtl">
             {iconTextMenu.map((text, index) => (
               <a href="#">
-                <HStack marginY="20px">
+                <HStack paddingX="10px" marginY="20px">
                   <Icon boxSize="25px" as={iconMap[index]}></Icon>
                   <Text>{text}</Text>
                 </HStack>
               </a>
             ))}
-            <Divider />
+            <Divider/>
+            <Text margin={4}>دسته بندی کالاها</Text>
             <ProductsCategorization />
           </DrawerBody>
         </DrawerContent>
