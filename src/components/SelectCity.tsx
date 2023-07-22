@@ -54,6 +54,7 @@ export const SelectCity = () => {
           <DrawerBody>
             {cityes.map((city) => (
               <Accordion
+              key={city.title}
                 w="100%"
                 marginTop={6}
                 fontSize="13px"
@@ -71,7 +72,7 @@ export const SelectCity = () => {
                   </h2>
                   <AccordionPanel pb={4}>
                     {city.content.map((content) => (
-                      <HStack padding={1}>
+                      <HStack key={content.title} padding={1}>
                         <Button w="100%">{content.title}</Button>
                       </HStack>
                     ))}

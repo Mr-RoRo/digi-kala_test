@@ -1,7 +1,10 @@
-*,*::after,*::before{
-    font-family: Vazirmatn, sans-serif;
-    text-align: right;
+*,
+*::after,
+*::before {
+  font-family: Vazirmatn, sans-serif;
+  text-align: right;
 }
-a{
-    text-decoration: none
+a {
+  text-decoration: none;
 }
+
