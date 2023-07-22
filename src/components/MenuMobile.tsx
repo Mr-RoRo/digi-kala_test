@@ -10,8 +10,8 @@ import {
   Image,
   Text,
   Icon,
-  Heading,
   Divider,
+  Button,
 } from "@chakra-ui/react";
 import { GrMenu } from "react-icons/gr";
 import digiFa from "../assets/digi.svg";
@@ -19,6 +19,7 @@ import { IconType } from "react-icons";
 import { iconsMenu } from "../data/icons-menu";
 import { iconTextMenu } from "../data/icons-menu";
 import { ProductsCategorization } from "./ProductsCategorization";
+import { AiOutlineClose } from "react-icons/ai";
 
 const iconMap: { [key: number]: IconType } = {
   0: iconsMenu[0],
@@ -47,13 +48,14 @@ export const MenuMobile = () => {
           <DrawerHeader  borderBottomWidth="1px">
             <HStack dir="rtl" justifyContent="space-between">
               <Image w="90px" src={digiFa} />
+              <Button onClick={onClose} background="transparent"><AiOutlineClose /></Button>
             </HStack>
           </DrawerHeader>
           <DrawerBody paddingX="0" dir="rtl">
             {iconTextMenu.map((text, index) => (
-              <a href="#">
+              <a key={index} href="#">
                 <HStack paddingX="10px" marginY="20px">
-                  <Icon boxSize="25px" as={iconMap[index]}></Icon>
+                  <Icon boxSize="25px" as={iconMap[index]} />
                   <Text>{text}</Text>
                 </HStack>
               </a>

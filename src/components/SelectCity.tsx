@@ -9,17 +9,23 @@ import {
   Text,
   IconButton,
   HStack,
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
 } from "@chakra-ui/react";
 import { GrLocation } from "react-icons/gr";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoIosArrowBack } from "react-icons/io";
+import { cityes } from "../data/cityes-data";
 
 export const SelectCity = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Button
-        alignItems="center"
         justifyContent="space-between"
         background="transparent"
         w="100%"
@@ -33,9 +39,9 @@ export const SelectCity = () => {
       </Button>
       <Drawer placement="bottom" onClose={onClose} isOpen={isOpen} size="full">
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent dir="rtl">
           <DrawerHeader borderBottomWidth="1px">
-            <HStack dir="rtl" justifyContent="space-between">
+            <HStack justifyContent="space-between">
               <Text>انتخاب شهر</Text>
               <IconButton
                 background="transparent"
@@ -45,7 +51,35 @@ export const SelectCity = () => {
               />
             </HStack>
           </DrawerHeader>
-          <DrawerBody></DrawerBody>
+          <DrawerBody>
+            {cityes.map((city) => (
+              <Accordion
+                w="100%"
+                marginTop={6}
+                fontSize="13px"
+                dir="rtl"
+                allowMultiple
+              >
+                <AccordionItem key={city.id} padding={2}>
+                  <h2>
+                    <AccordionButton>
+                      <Box fontSize="15px" as="span" flex="1" textAlign="right">
+                        {city.title}
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4}>
+                    {city.content.map((content) => (
+                      <HStack padding={1}>
+                        <Button w="100%">{content.title}</Button>
+                      </HStack>
+                    ))}
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>

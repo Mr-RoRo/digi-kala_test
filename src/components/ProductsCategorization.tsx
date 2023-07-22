@@ -11,7 +11,7 @@ import { headingCategorys } from "../data/categoryes";
 
 export const ProductsCategorization = () => {
   return (
-    <Accordion w="20rem" marginTop={6} fontSize="13px" dir="rtl" allowMultiple>
+    <Accordion w="100%" marginTop={6} fontSize="13px" dir="rtl" allowMultiple>
       {headingCategorys.map((category) => (
         <AccordionItem key={category.id} padding={2}>
           <h2>
@@ -24,7 +24,7 @@ export const ProductsCategorization = () => {
           </h2>
           <AccordionPanel pb={4}>
             {category.content.map((content) => (
-              <AccordionItem key={category.id} padding={2}>
+              <AccordionItem key={content.title} padding={2}>
                 <h2>
                   <AccordionButton>
                     <Box fontSize="15px" as="span" flex="1" textAlign="right">
