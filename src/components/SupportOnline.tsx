@@ -66,15 +66,13 @@ const SupportOnline = () => {
             </Text>
             <SupportQuestions />
           </DrawerBody>
-          <DrawerFooter  justifyContent="center">
+          <DrawerFooter justifyContent="center">
             <VStack>
-                <Text>
-                    جواب سوالتون رو پیدا نکردید ؟
-                </Text>
-                    <Button color="#fff" colorScheme="cyan">
-                        <MdKeyboardArrowLeft />
-                    گفتگو با پشتیبان آنلاین
-                    </Button>
+              <Text>جواب سوالتون رو پیدا نکردید ؟</Text>
+              <Button color="#fff" colorScheme="cyan">
+                <MdKeyboardArrowLeft />
+                گفتگو با پشتیبان آنلاین
+              </Button>
             </VStack>
           </DrawerFooter>
         </DrawerContent>

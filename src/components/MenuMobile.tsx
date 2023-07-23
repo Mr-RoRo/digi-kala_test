@@ -44,11 +44,13 @@ export const MenuMobile = () => {
       ></IconButton>
       <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="xs">
         <DrawerOverlay />
-        <DrawerContent >
-          <DrawerHeader  borderBottomWidth="1px">
+        <DrawerContent>
+          <DrawerHeader borderBottomWidth="1px">
             <HStack dir="rtl" justifyContent="space-between">
               <Image w="90px" src={digiFa} />
-              <Button onClick={onClose} background="transparent"><AiOutlineClose /></Button>
+              <Button onClick={onClose} background="transparent">
+                <AiOutlineClose />
+              </Button>
             </HStack>
           </DrawerHeader>
           <DrawerBody paddingX="0" dir="rtl">
@@ -60,7 +62,7 @@ export const MenuMobile = () => {
                 </HStack>
               </a>
             ))}
-            <Divider/>
+            <Divider />
             <Text margin={4}>دسته بندی کالاها</Text>
             <ProductsCategorization />
           </DrawerBody>

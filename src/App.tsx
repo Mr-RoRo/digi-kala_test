@@ -2,7 +2,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import ImgaeSlider from "./components/ImgaeSlider";
 import OtherCompany from "./components/OtherCompany";
-import { SliderProducts } from "./components/SliderProducts/SliderProducts";
+import { SliderProducts } from "./components/SliderProducts";
 
 function App() {
   return (

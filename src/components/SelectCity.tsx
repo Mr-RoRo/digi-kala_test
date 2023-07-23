@@ -54,7 +54,7 @@ export const SelectCity = () => {
           <DrawerBody>
             {cityes.map((city) => (
               <Accordion
-              key={city.title}
+                key={city.title}
                 w="100%"
                 marginTop={6}
                 fontSize="13px"

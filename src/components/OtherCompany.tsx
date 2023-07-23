@@ -22,7 +22,7 @@ const textMap: { [key: number]: string } = {
 function OtherCompany() {
   return (
     <Grid
-      marginTop={6}
+      marginY={6}
       dir="rtl"
       templateColumns="repeat(4, 1fr)"
       templateRows="repeat(2, 1fr)"
@@ -30,30 +30,30 @@ function OtherCompany() {
     >
       {companyImage.map((image, index) => (
         <GridItem key={index}>
-            <a href="#">
-          <VStack>
+          <a href="#">
+            <VStack>
               <Image boxSize="50px" src={image} />
-            <Text textAlign="center" fontSize="12px">
-              {textMap[index]}
-            </Text>
-          </VStack>
-            </a>
+              <Text textAlign="center" fontSize="12px">
+                {textMap[index]}
+              </Text>
+            </VStack>
+          </a>
         </GridItem>
       ))}
       <GridItem>
-          <a href="#">
-        <VStack>
+        <a href="#">
+          <VStack>
             <IconButton
               borderRadius="100%"
               boxSize="50px"
               aria-label={"More"}
               icon={<BsThreeDots />}
             ></IconButton>
-          <Text textAlign="center" fontSize="12px">
-            بیشتر
-          </Text>
-        </VStack>
-          </a>
+            <Text textAlign="center" fontSize="12px">
+              بیشتر
+            </Text>
+          </VStack>
+        </a>
       </GridItem>
     </Grid>
   );

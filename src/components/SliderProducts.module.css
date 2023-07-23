@@ -1,0 +1,24 @@
+.mySwiper {
+  direction: rtl;
+  width: 90vw;
+  height: 100%;
+}
+
+.SwiperSlide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SwiperSlide .ImageCards {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link {
+  color: #fff;
+}
