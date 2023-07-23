@@ -53,3 +53,9 @@
   align-items: center;
   
 }
+
+.dflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

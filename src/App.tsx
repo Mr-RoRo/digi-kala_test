@@ -7,6 +7,7 @@ import AdsGrid from "./components/AdsGrid";
 import Categoryes from "./components/Categoryes";
 import Banre from "./components/Baner";
 import { DigiPshnahad } from "./components/DigiPshnahad";
+import { BrandSlider } from "./components/BrandSlider";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Categoryes />
           <Banre />
           <DigiPshnahad />
+          <BrandSlider />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>

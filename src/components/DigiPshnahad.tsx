@@ -18,7 +18,7 @@ export const DigiPshnahad = () => {
       </Heading>
       <Box
         w="95vw"
-        h="35vh"
+        h="38vh"
         dir="rtl"
         marginY="25px"
         border="1px solid #ccc"
