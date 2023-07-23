@@ -9,6 +9,7 @@ import Banre from "./components/Baner";
 import { DigiPshnahad } from "./components/DigiPshnahad";
 import { BrandSlider } from "./components/BrandSlider";
 import NewBaner from "./components/NewBaner";
+import ProductsPeshnahad from "./components/ProductsPeshnahad";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <DigiPshnahad />
           <BrandSlider />
           <NewBaner />
+          <ProductsPeshnahad />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>
