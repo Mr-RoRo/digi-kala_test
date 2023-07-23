@@ -1,11 +1,12 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import {  Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import ImgaeSlider from "./components/ImgaeSlider";
 import OtherCompany from "./components/OtherCompany";
 import { SliderProducts } from "./components/SliderProducts";
 import AdsGrid from "./components/AdsGrid";
 import Categoryes from "./components/Categoryes";
-import Banre from "./components/banre";
+import Banre from "./components/Baner";
+import { DigiPshnahad } from "./components/DigiPshnahad";
 
 function App() {
   return (
@@ -14,12 +15,13 @@ function App() {
         <NavBar />
       </GridItem>
       <GridItem area={"main"}>
-        <ImgaeSlider />
-        <OtherCompany />
-        <SliderProducts />
-        <AdsGrid />
-        <Categoryes />
-        <Banre />
+          <ImgaeSlider />
+          <OtherCompany />
+          <SliderProducts />
+          <AdsGrid />
+          <Categoryes />
+          <Banre />
+          <DigiPshnahad />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>

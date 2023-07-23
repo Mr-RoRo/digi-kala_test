@@ -25,8 +25,31 @@
 
 .seeMore {
   background: #fff;
-  border-radius:5px;
+  border-radius: 5px;
   .link {
     color: black;
   }
+}
+
+/* Peshnahad Components */
+
+
+.Swiper {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.GridSwiper {
+
+  padding: 0 0px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
