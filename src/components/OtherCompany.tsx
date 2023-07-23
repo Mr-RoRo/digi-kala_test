@@ -24,8 +24,14 @@ function OtherCompany() {
     <Grid
       marginY={6}
       dir="rtl"
-      templateColumns="repeat(4, 1fr)"
-      templateRows="repeat(2, 1fr)"
+      templateColumns={{
+        base: "repeat(4,1fr)",
+        lg: "repeat(8,1fr)",
+      }}
+      templateRows={{
+        base: "repeat(2,1fr)",
+        lg: "repeat(1,1fr)",
+      }}
       gap={4}
     >
       {companyImage.map((image, index) => (

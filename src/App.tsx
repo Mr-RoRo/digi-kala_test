@@ -4,7 +4,8 @@ import ImgaeSlider from "./components/ImgaeSlider";
 import OtherCompany from "./components/OtherCompany";
 import { SliderProducts } from "./components/SliderProducts";
 import AdsGrid from "./components/AdsGrid";
-import Categoryes from "./components/categoryes";
+import Categoryes from "./components/Categoryes";
+import Banre from "./components/banre";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <SliderProducts />
         <AdsGrid />
         <Categoryes />
+        <Banre />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>

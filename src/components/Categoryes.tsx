@@ -1,9 +1,11 @@
-import { Grid, GridItem, Image, Text, VStack } from "@chakra-ui/react";
+import { Grid, GridItem, Image, Link, Text, VStack } from "@chakra-ui/react";
 import categoryInfo from "../data/category-info";
 
 const Categoryes = () => {
   return (
     <Grid
+      marginY={5}
+      marginX={5}
       justifyItems="center"
       gap={{ base: "3", lg: "2" }}
       templateColumns={{
@@ -17,10 +19,12 @@ const Categoryes = () => {
     >
       {categoryInfo.map((info, index) => (
         <GridItem key={index}>
-          <VStack>
-            <Image boxSize={{ base: "90px", lg: "170px" }} src={info.image} />
-            <Text textAlign="center">{info.categoryName}</Text>
-          </VStack>
+          <a href="#">
+            <VStack>
+              <Image boxSize={{ base: "90px", lg: "170px" }} src={info.image} />
+              <Text textAlign="center">{info.categoryName}</Text>
+            </VStack>
+          </a>
         </GridItem>
       ))}
     </Grid>
