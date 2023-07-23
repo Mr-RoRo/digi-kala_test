@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image, LinkOverlay } from "@chakra-ui/react";
+import { Grid, GridItem, Image, Link, LinkOverlay } from "@chakra-ui/react";
 import adsImages from "../data/ads-images";
 const AdsGrid = () => {
   return (
@@ -17,9 +17,9 @@ const AdsGrid = () => {
     >
       {adsImages.map((image,index) => (
         <GridItem key={index}>
-            <LinkOverlay href="#">
+            <Link href="#">
                 <Image borderRadius="1rem" src={image} />
-            </LinkOverlay>
+            </Link>
         </GridItem>
       ))}
     </Grid>
