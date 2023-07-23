@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image, Link, LinkOverlay } from "@chakra-ui/react";
+import { Grid, GridItem, Image, Link } from "@chakra-ui/react";
 import adsImages from "../data/ads-images";
 const AdsGrid = () => {
   return (
