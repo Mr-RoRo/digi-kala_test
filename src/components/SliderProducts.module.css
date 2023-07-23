@@ -22,3 +22,11 @@
 .link {
   color: #fff;
 }
+
+.seeMore {
+  background: #fff;
+  border-radius:5px;
+  .link {
+    color: black;
+  }
+}

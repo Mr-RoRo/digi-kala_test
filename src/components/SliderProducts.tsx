@@ -1,8 +1,8 @@
-import { Box, Image, VStack } from "@chakra-ui/react";
+import { Box, Image, Text, VStack } from "@chakra-ui/react";
 import box from "../assets/box.png";
 import boxText from "../assets/Amazings.svg";
 import { ImageCards } from "./ImageCards";
-import { imageDrag } from "../data/image-drag";
+import { imageDrag } from "../data/image-cards-info";
 import { register } from "swiper/element";
 import style from "./SliderProducts.module.css";
 register();
@@ -11,6 +11,7 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
+import { BsArrowLeftCircle } from "react-icons/bs";
 
 export const SliderProducts = () => {
   return (
@@ -55,11 +56,20 @@ export const SliderProducts = () => {
             </a>
           </VStack>
         </SwiperSlide>
-        {imageDrag.map((image) => (
+        {imageDrag.map((image, index) => (
           <SwiperSlide className={style.SwiperSlide}>
-            <ImageCards image={image} />
+            <ImageCards index={index} image={image} />
           </SwiperSlide>
         ))}
+        <SwiperSlide className={style.seeMore}>
+          <a className={style.link} href="#">
+            <VStack h="100%" justifyContent="center">
+              <BsArrowLeftCircle size="3rem" color="cyan" />
+
+              <Text>مشاهده همه</Text>
+            </VStack>
+          </a>
+        </SwiperSlide>
       </Swiper>
     </Box>
   );
