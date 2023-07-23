@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import ImgaeSlider from "./components/ImgaeSlider";
 import OtherCompany from "./components/OtherCompany";
 import { SliderProducts } from "./components/SliderProducts";
+import AdsGrid from "./components/AdsGrid";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <ImgaeSlider />
         <OtherCompany />
         <SliderProducts />
+        <AdsGrid />
       </GridItem>
       <GridItem area={"footer"}></GridItem>
     </Grid>

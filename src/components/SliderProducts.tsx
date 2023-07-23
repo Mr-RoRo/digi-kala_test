@@ -57,7 +57,7 @@ export const SliderProducts = () => {
           </VStack>
         </SwiperSlide>
         {imageDrag.map((image, index) => (
-          <SwiperSlide className={style.SwiperSlide}>
+          <SwiperSlide key={index} className={style.SwiperSlide}>
             <ImageCards index={index} image={image} />
           </SwiperSlide>
         ))}
