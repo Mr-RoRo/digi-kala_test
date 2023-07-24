@@ -7,7 +7,7 @@ import { register } from "swiper/element";
 import style from "./SliderProducts.module.css";
 register();
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -15,7 +15,7 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 
 export const SliderProducts = () => {
   return (
-    <Box background="#ef394e" h="15rem" padding="10px">
+    <Box background="#ef394e" h="15rem" padding="10px" marginX={{lg:30}} borderRadius={{lg:"15px"}}>
       <Swiper
         spaceBetween={10}
         breakpoints={{
@@ -44,7 +44,7 @@ export const SliderProducts = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode]}
         className={style.mySwiper}
       >
         <SwiperSlide className={style.SwiperSlide}>

@@ -12,12 +12,12 @@ import "swiper/css/grid";
 
 export const DigiPshnahad = () => {
   return (
-    <VStack>
+    <VStack marginX={5}>
       <Heading fontSize={{ base: "18px", lg: "21px" }}>
         پیشنهاد دیجی‌کالا
       </Heading>
       <Box
-        w="95vw"
+        w="100%"
         h="38vh"
         dir="rtl"
         marginY="25px"

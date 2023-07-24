@@ -1,7 +1,12 @@
 .mySwiper {
   direction: rtl;
-  width: 90vw;
+  width: 100%;
   height: 100%;
+}
+
+.newSwiper{
+  width: 98vw;
+  height: 20rem;
 }
 
 .SwiperSlide {

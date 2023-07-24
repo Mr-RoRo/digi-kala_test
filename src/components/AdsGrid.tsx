@@ -4,7 +4,7 @@ const AdsGrid = () => {
   return (
     <Grid
     marginY={5}
-    marginX={5}
+    marginX={{base:5,lg:30}}
     gap={5}
       templateColumns={{
         base: "repeat(2,1fr)",

@@ -6,13 +6,13 @@ const Baner = () => {
   return (
     <HStack marginY="2rem" justifyContent="center" padding="0 15px" w="100%">
       <Show above="base">
-        <Link w={{ base: "100%", lg: "50%" }}>
-          <Image  src={baner1} />
+        <Link marginLeft={{lg:2}} w={{ base: "100%", lg: "50%" }}>
+          <Image borderRadius={20}  src={baner1} />
         </Link>
       </Show>
       <Show above="lg">
-        <Link w={{ base: "100%", lg: "50%" }}>
-          <Image  src={baner2} />
+        <Link marginRight={{lg:2}} w={{ base: "100%", lg: "50%" }}>
+          <Image borderRadius={20}  src={baner2} />
         </Link>
       </Show>
     </HStack>
