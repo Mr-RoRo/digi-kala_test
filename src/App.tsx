@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Show, } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import OtherCompany from "./components/OtherCompany";
 import { SliderProducts } from "./components/SliderProducts";
@@ -15,9 +15,9 @@ import SupportTeamOnline from "./components/SupportTeamOnline";
 function App() {
   return (
     <Grid
-      templateAreas={`"nav"
-       "main"
-      "footer"`}
+      templateAreas={`"nav nav"
+    "main main"
+    "footer footer"`}
     >
       <GridItem
         padding={{ base: "12px 5px 5px 12px", lg: "12px 12px 5px 12px" }}

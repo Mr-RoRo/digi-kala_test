@@ -12,15 +12,6 @@ import {
   DrawerFooter,
   Button,
   VStack,
-  Show,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  Box,
-  PopoverArrow,
 } from "@chakra-ui/react";
 import { HiArrowLeft } from "react-icons/hi";
 import { GrLocation } from "react-icons/gr";
