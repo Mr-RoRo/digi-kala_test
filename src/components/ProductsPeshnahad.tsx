@@ -13,9 +13,8 @@ const ProductsPeshnahad = () => {
       templateRows={{ base: "repeat(4,1fr)", lg: "repeat(1,1fr)" }}
     >
       {productsInfo.map((info) => (
-        <GridItem borderX={{ lg: "1px solid #ccc" }}>
-          <ProductPeshnahadi
-            key={info.id}
+        <GridItem key={info.title} borderX={{ lg: "1px solid #ccc" }}>
+          <ProductPeshnahadi 
             heading={info.title}
             images={info.images.map((image) => image)}
           />

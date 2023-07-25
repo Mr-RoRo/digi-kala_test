@@ -1,4 +1,4 @@
-import { HStack, Image, Divider, Show, Box, VStack } from "@chakra-ui/react";
+import { HStack, Image, Divider, Show, Box } from "@chakra-ui/react";
 
 import logo from "../assets/logo.svg";
 import { SearchBar } from "./SearchBar";

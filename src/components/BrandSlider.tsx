@@ -15,10 +15,10 @@ export const BrandSlider = () => {
   return (
     <VStack paddingBottom={5} marginX={{lg:6}} border={{lg:"1px solid #ccc"}} borderRadius={15} marginY={5} dir="rtl">
       <HStack marginY={5}>
+        <BsStars color="orange" size="20px" />
         <Heading fontSize={{ base: "18px", lg: "21px" }}>
           محبوب ترین برندها
         </Heading>
-        <BsStars color="orange" size="20px" />
       </HStack>
       <Swiper
         slidesPerView={3}

@@ -14,7 +14,7 @@ const Categoryes = () => {
       <Heading fontSize={{base:"18px",lg:"21px"}} marginY={10} textAlign="center">دسته بندی های دیجی کالا</Heading>
       <Grid
         marginY={5}
-        marginX={{base:20 , lg:8}}
+        marginX={{base:5 , lg:8}}
         justifyItems="center"
         gap={{ base: "3", lg: "2" }}
         templateColumns={{
