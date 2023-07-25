@@ -13,12 +13,12 @@ import {
   Divider,
   Button,
 } from "@chakra-ui/react";
-import { GrMenu } from "react-icons/gr";
 import digiFa from "../assets/digi.svg";
-import { IconType } from "react-icons";
-import { iconsMenu } from "../data/icons-menu";
 import { iconTextMenu } from "../data/icons-menu";
 import { ProductsCategorization } from "./ProductsCategorization";
+import { iconsMenu } from "../data/icons-menu";
+import { GrMenu } from "react-icons/gr";
+import { IconType } from "react-icons";
 import { AiOutlineClose } from "react-icons/ai";
 
 const iconMap: { [key: number]: IconType } = {

@@ -64,3 +64,29 @@
   align-items: center;
   justify-content: center;
 }
+
+
+/* undel line effect */
+
+.underLineEff{
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.underLineEff::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ef394e;
+  transition: width 0.25s ease-out;
+}
+
+.underLineEff:hover::before{
+  width: 100%;
+  left: 0;
+  right: auto;
+}
