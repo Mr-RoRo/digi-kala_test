@@ -14,7 +14,7 @@ export const FormEmail = () => {
   const isError = input === "";
 
   return (
-    <FormControl isInvalid={isError}>
+    <FormControl marginBottom="1.5rem" isInvalid={isError}>
       <HStack>
         <Input
           placeholder="ایمیل شما"
