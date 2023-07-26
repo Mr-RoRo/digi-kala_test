@@ -28,7 +28,7 @@ export const FormEmail = () => {
           با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
         </FormHelperText>
       ) : (
-        <FormErrorMessage>Email is required.</FormErrorMessage>
+        <FormErrorMessage>ایمیل را وارد کنید</FormErrorMessage>
       )}
     </FormControl>
   );

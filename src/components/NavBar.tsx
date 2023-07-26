@@ -41,7 +41,7 @@ const NavBar = () => {
           <SearchBar />
           <Image src={logo} />
         </HStack>
-        <HStack marginTop="3rem" justifyContent="space-between">
+        <HStack marginX="1.2rem" marginTop="3rem" justifyContent="space-between">
           <SelectCity />
           <MenuLg />
         </HStack>
