@@ -18,7 +18,7 @@ import { BiSupport } from "react-icons/bi";
 
 const SupportTeamOnline = () => {
   return (
-    <Box position="fixed" top="54rem" left="2rem" zIndex={1}>
+    <Box position="fixed" top="90%" left="2rem" zIndex={52}>
       <Popover>
         <PopoverTrigger>
           <Button

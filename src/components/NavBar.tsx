@@ -31,8 +31,8 @@ const NavBar = () => {
           background="#fff"
           position="fixed"
           top={0}
-          right={0}
-          left={0}
+          right="0"
+          left="0"
           marginBottom={3}
           justifyContent="space-between"
           zIndex={2}

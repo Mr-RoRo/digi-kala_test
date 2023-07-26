@@ -7,7 +7,6 @@ import {
   Heading,
   Image,
   Link,
-  LinkOverlay,
   VStack,
 } from "@chakra-ui/react";
 import ReadingMagInfo from "../data/reading-mag-info";
