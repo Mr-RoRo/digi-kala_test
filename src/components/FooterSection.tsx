@@ -104,7 +104,7 @@ const FooterSection = () => {
             <Heading color="black" fontSize="14px">
               همراه ما باشید!
             </Heading>
-            <HStack>
+            <HStack marginY={3}>
               <SiAparat size="2rem" />
               <AiFillLinkedin size="2rem" />
               <AiOutlineTwitter size="2rem" />
