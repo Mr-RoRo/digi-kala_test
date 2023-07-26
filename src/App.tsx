@@ -14,6 +14,7 @@ import SupportTeamOnline from "./components/SupportTeamOnline";
 import DigiClub from "./components/DigiClub";
 import productsInfo from "./data/products-peshnahadi";
 import productsNew from "./data/products-new";
+import ReadingMag from "./components/ReadingMag";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <ProductsPeshnahad Products={productsInfo} />
           <DigiClub />
           <ProductsPeshnahad Products={productsNew} />
+          <ReadingMag />
         </Box>
         <Show above="lg">
           <SupportTeamOnline />
