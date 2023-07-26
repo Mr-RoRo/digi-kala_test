@@ -1,7 +1,7 @@
 import buy from "../assets/buy.png";
 import cafeGame from "../assets/cafeGame.png";
 import digiKalaJet from "../assets/digiKalaJet.png";
-import installmentsBuy from "../assets/installmentsbuy.png";
+import installmentsbuy from "../assets/installmentsbuy.png";
 import report from "../assets/report.png";
 import styleBuy from "../assets/styleBuy.png";
 import todaySending from "../assets/todaySending.png";
@@ -9,7 +9,7 @@ export const otherCompany = [
   buy,
   cafeGame,
   digiKalaJet,
-  installmentsBuy,
+  installmentsbuy,
   report,
   styleBuy,
   todaySending,
@@ -85,7 +85,7 @@ export const serviceGroup = [
     id: 7,
     title: "دیجی پی",
     dis: "خرید قسطی گوشی موبایل ، لپ تاپ ، طلا و لوازم خانگی",
-    image: installmentsBuy,
+    image: installmentsbuy,
   },
   {
     id: 8,
