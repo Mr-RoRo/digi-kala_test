@@ -25,12 +25,23 @@ const NavBar = () => {
         <SelectCity />
       </Show>
       <Show above="lg">
-        <HStack marginBottom={3} justifyContent="space-between">
+        <HStack
+        paddingX={3}
+          h="4rem"
+          background="#fff"
+          position="fixed"
+          top={0}
+          right={0}
+          left={0}
+          marginBottom={3}
+          justifyContent="space-between"
+          zIndex={2}
+        >
           <LoginCardBtn />
           <SearchBar />
           <Image src={logo} />
         </HStack>
-        <HStack justifyContent="space-between">
+        <HStack marginTop="3rem" justifyContent="space-between">
           <SelectCity />
           <MenuLg />
         </HStack>
