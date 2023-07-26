@@ -11,6 +11,9 @@ import NewBaner from "./components/NewBaner";
 import ProductsPeshnahad from "./components/ProductsPeshnahad";
 import { ImageSSlider } from "./components/ImageSlider";
 import SupportTeamOnline from "./components/SupportTeamOnline";
+import DigiClub from "./components/DigiClub";
+import productsInfo from "./data/products-peshnahadi";
+import productsNew from "./data/products-new";
 
 function App() {
   return (
@@ -36,7 +39,9 @@ function App() {
           <DigiPshnahad />
           <BrandSlider />
           <NewBaner />
-          <ProductsPeshnahad />
+          <ProductsPeshnahad Products={productsInfo} />
+          <DigiClub />
+          <ProductsPeshnahad Products={productsNew} />
         </Box>
         <Show above="lg">
           <SupportTeamOnline />

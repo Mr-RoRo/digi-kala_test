@@ -13,15 +13,10 @@ import {
   Image,
   Box,
   Link,
-  LinkBox,
-  LinkOverlay,
   Show,
   ModalContent,
-  Button,
   Modal,
   ModalBody,
-  ModalCloseButton,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
   Grid,
@@ -70,7 +65,7 @@ const MoreCompony = () => {
             <DrawerBody>
               <SimpleGrid marginY="3rem" rowGap="3rem" columns={3}>
                 {Service.map((image) => (
-                  <VStack>
+                  <VStack key={image.title}>
                     <Image boxSize="48px" src={image.image} />
                     <Text fontSize="10px" textAlign="center">
                       {image.title}
@@ -83,6 +78,7 @@ const MoreCompony = () => {
               </Text>
               {serviceGroup.map((image) => (
                 <HStack
+                  key={image.dis}
                   justifyContent="space-between"
                   as={Link}
                   href="#"
@@ -115,7 +111,7 @@ const MoreCompony = () => {
           size="2xl"
         >
           <ModalOverlay />
-          <ModalContent w="50%" >
+          <ModalContent w="50%">
             <ModalHeader>
               <HStack dir="rtl" justifyContent="space-between">
                 <Text>خدمات دیجی کالا</Text>
@@ -130,7 +126,7 @@ const MoreCompony = () => {
             <ModalBody>
               <SimpleGrid marginY="3rem" rowGap="3rem" columns={3}>
                 {Service.map((image) => (
-                  <VStack>
+                  <VStack key={image.id + 10}>
                     <Image boxSize="48px" src={image.image} />
                     <Text fontSize="10px" textAlign="center">
                       {image.title}
@@ -150,7 +146,15 @@ const MoreCompony = () => {
               >
                 {serviceGroup.map((image) => (
                   <>
-                    <HStack padding="8px 10px " border="1px solid #ccc" borderRadius="10px" as={Link} href="#" justifyContent="space-between">
+                    <HStack
+                      key={image.id + 20}
+                      padding="8px 10px "
+                      border="1px solid #ccc"
+                      borderRadius="10px"
+                      as={Link}
+                      href="#"
+                      justifyContent="space-between"
+                    >
                       <HStack>
                         <Image boxSize="50px" src={image.image} />
                         <Box>

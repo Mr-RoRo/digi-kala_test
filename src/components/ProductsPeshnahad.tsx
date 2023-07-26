@@ -1,8 +1,17 @@
 import ProductPeshnahadi from "./ProductPeshnahadi";
-import productsInfo from "../data/products-peshnahadi";
 import { Grid, GridItem } from "@chakra-ui/react";
 
-const ProductsPeshnahad = () => {
+interface Products {
+  id: number;
+  title: string;
+  images: string[];
+}
+
+interface Props {
+  Products : Products[]
+}
+
+const ProductsPeshnahad = ({Products} : Props) => {
   return (
     <Grid
       margin={5}
@@ -12,9 +21,9 @@ const ProductsPeshnahad = () => {
       templateColumns={{ base: "repeat(1,1fr)", lg: "repeat(4,1fr)" }}
       templateRows={{ base: "repeat(4,1fr)", lg: "repeat(1,1fr)" }}
     >
-      {productsInfo.map((info) => (
+      {Products.map((info) => (
         <GridItem key={info.title} borderX={{ lg: "1px solid #ccc" }}>
-          <ProductPeshnahadi 
+          <ProductPeshnahadi
             heading={info.title}
             images={info.images.map((image) => image)}
           />
