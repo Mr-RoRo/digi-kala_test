@@ -15,13 +15,13 @@ import DigiClub from "./components/DigiClub";
 import productsInfo from "./data/products-peshnahadi";
 import productsNew from "./data/products-new";
 import ReadingMag from "./components/ReadingMag";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
     <Grid
       templateAreas={`"nav nav"
-    "main main"
-    "footer footer"`}
+    "main main"`}
     >
       <GridItem
         padding={{ base: "12px 5px 5px 12px", lg: "12px 12px 5px 12px" }}
@@ -31,7 +31,7 @@ function App() {
       </GridItem>
       <GridItem area={"main"}>
         <ImageSSlider />
-        <Box w="99vw" h="100vh" paddingX={{ xl: "45px", "2xl": "20rem" }}>
+        <Box w="99vw" paddingX={{ xl: "45px", "2xl": "20rem" }}>
           <OtherCompany />
           <SliderProducts />
           <AdsGrid />
@@ -45,10 +45,10 @@ function App() {
           <ProductsPeshnahad Products={productsNew} />
           <ReadingMag />
         </Box>
+        <FooterSection />
         <Show above="lg">
           <SupportTeamOnline />
         </Show>
-        <GridItem area={"footer"}></GridItem>
       </GridItem>
     </Grid>
   );

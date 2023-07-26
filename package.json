@@ -13,14 +13,17 @@
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.1.1",
     "framer-motion": "^10.13.0",
     "or": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
     "react-icons": "^4.10.1",
     "react-multi-carousel": "^2.8.4",
     "styled-components": "^6.0.5",
-    "swiper": "^10.0.4"
+    "swiper": "^10.0.4",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
