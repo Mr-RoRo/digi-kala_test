@@ -1,13 +1,6 @@
-import {
-  Grid,
-  GridItem,
-  IconButton,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import companyImage from "../data/company-image";
-import { BsThreeDots } from "react-icons/bs";
+import { Grid, GridItem, Image, Text, VStack } from "@chakra-ui/react";
+import {otherCompany} from "../data/company-image";
+import MoreCompony from "./MoreCompony";
 
 const textMap: { [key: number]: string } = {
   0: "خرید عمده و سازمانی",
@@ -34,7 +27,7 @@ function OtherCompany() {
       }}
       gap={4}
     >
-      {companyImage.map((image, index) => (
+      {otherCompany.map((image, index) => (
         <GridItem key={index}>
           <a href="#">
             <VStack>
@@ -48,17 +41,7 @@ function OtherCompany() {
       ))}
       <GridItem>
         <a href="#">
-          <VStack>
-            <IconButton
-              borderRadius="100%"
-              boxSize="50px"
-              aria-label={"More"}
-              icon={<BsThreeDots />}
-            ></IconButton>
-            <Text textAlign="center" fontSize="12px">
-              بیشتر
-            </Text>
-          </VStack>
+          <MoreCompony />
         </a>
       </GridItem>
     </Grid>
