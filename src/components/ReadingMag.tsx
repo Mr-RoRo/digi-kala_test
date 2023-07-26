@@ -25,7 +25,8 @@ const ReadingMag = () => {
         templateRows={{ base: "repeat(4,1fr)", lg: "repeat(1,1fr)" }}
       >
         {ReadingMagInfo.map((data) => (
-          <VStack>
+          <VStack
+          key={data.id}>
             <Card
               w="90%"
               borderRadius="15px"

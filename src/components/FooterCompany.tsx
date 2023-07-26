@@ -8,8 +8,8 @@ const FooterCompany = () => {
       templateColumns={{ base: "repeat(3,1fr)", lg: "repeat(9,1fr)" }}
       templateRows={{ base: "repeat(6,1fr)", lg: "repeat(2,1fr)" }}
     >
-      {footerCompanyLogo.map((image) => (
-        <VStack border="1px solid #e0e0e6" padding="1rem">
+      {footerCompanyLogo.map((image,index) => (
+        <VStack key={index+600} border="1px solid #e0e0e6" padding="1rem">
           <Image src={image} />
         </VStack>
       ))}

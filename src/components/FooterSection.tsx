@@ -43,7 +43,7 @@ const FooterSection = () => {
           justifyContent="space-between"
         >
           {footerInfo.map((info) => (
-            <VStack>
+            <VStack key={info.id}>
               <Image src={info.image} />
               <Text color="#3f4064" fontSize="13px">
                 {info.title}
@@ -59,13 +59,18 @@ const FooterSection = () => {
         templateRows={{ base: "repeat(2,auto)", lg: "repeat(1,1fr)" }}
       >
         {footerItem.map((item) => (
-          <GridItem marginY="2.5rem">
+          <GridItem key={item.title} marginY="2.5rem">
             <Heading paddingBottom="13px" fontSize="16px">
               {item.title}
             </Heading>
             <List>
-              {item.content.map((data) => (
-                <ListItem paddingY="8px" fontSize="12px" color="#767790">
+              {item.content.map((data, index) => (
+                <ListItem
+                  key={index + 100}
+                  paddingY="8px"
+                  fontSize="12px"
+                  color="#767790"
+                >
                   {data}
                 </ListItem>
               ))}

@@ -65,7 +65,7 @@ const MoreCompony = () => {
             <DrawerBody>
               <SimpleGrid marginY="3rem" rowGap="3rem" columns={3}>
                 {Service.map((image) => (
-                  <VStack key={image.title}>
+                  <VStack key={image.id+500}>
                     <Image boxSize="48px" src={image.image} />
                     <Text fontSize="10px" textAlign="center">
                       {image.title}
@@ -78,7 +78,7 @@ const MoreCompony = () => {
               </Text>
               {serviceGroup.map((image) => (
                 <HStack
-                  key={image.dis}
+                  key={image.id+200}
                   justifyContent="space-between"
                   as={Link}
                   href="#"
@@ -126,7 +126,7 @@ const MoreCompony = () => {
             <ModalBody>
               <SimpleGrid marginY="3rem" rowGap="3rem" columns={3}>
                 {Service.map((image) => (
-                  <VStack key={image.id + 10}>
+                  <VStack key={image.id + 100}>
                     <Image boxSize="48px" src={image.image} />
                     <Text fontSize="10px" textAlign="center">
                       {image.title}
@@ -145,9 +145,9 @@ const MoreCompony = () => {
                 dir="rtl"
               >
                 {serviceGroup.map((image) => (
-                  <>
+                  <Box key={image.id + 900}>
                     <HStack
-                      key={image.id + 20}
+                      
                       padding="8px 10px "
                       border="1px solid #ccc"
                       borderRadius="10px"
@@ -166,7 +166,7 @@ const MoreCompony = () => {
                       </HStack>
                       <BsArrowLeftShort size="30px" color="gray" />
                     </HStack>
-                  </>
+                  </Box>
                 ))}
               </Grid>
             </ModalBody>

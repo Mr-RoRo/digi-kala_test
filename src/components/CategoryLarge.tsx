@@ -35,7 +35,7 @@ const CategoryLarge = () => {
                 _hover={{ color: "#ef394e", background: "#FFF3F5" }}
                 background="transparent"
                 w="10rem"
-                key={info.id}
+                key={index + 300}
               >
                 {info.title}
               </Button>
@@ -51,7 +51,7 @@ const CategoryLarge = () => {
               templateColumns={"repeat(5,1fr)"}
             >
               {headingCategorys[btnRef].content.map((info) => (
-                <GridItem>
+                <GridItem key={info.id + 50}>
                   <Heading fontSize="14px">
                     <Mark fontSize="25px" color="red">
                       |
@@ -59,7 +59,9 @@ const CategoryLarge = () => {
                     {info.title}
                   </Heading>
                   {info.content.map((content) => (
-                    <Text fontSize="12px">{content.content}</Text>
+                    <Text key={content.id + 150} fontSize="12px">
+                      {content.content}
+                    </Text>
                   ))}
                 </GridItem>
               ))}

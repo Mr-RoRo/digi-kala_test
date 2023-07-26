@@ -26,8 +26,8 @@ const InstallDigi = () => {
             <Heading fontSize="16px"> دانلود اپلیکیشن دیجی‌کالا</Heading>
           </HStack>
           <HStack  justifyContent="center">
-            {images.map((image) => (
-              <Image w={{base:"7rem" , md:"10rem"}} src={image} />
+            {images.map((image,index) => (
+              <Image key={index} w={{base:"7rem" , md:"10rem"}} src={image} />
             ))}
           </HStack>
           <VStack>
@@ -55,8 +55,8 @@ const InstallDigi = () => {
             <Heading fontSize="25px"> دانلود اپلیکیشن دیجی‌کالا</Heading>
           </HStack>
           <HStack justifyContent="center">
-            {images.map((image) => (
-              <Image src={image} />
+            {images.map((image,index) => (
+              <Image key={index+800} src={image} />
             ))}
             <IconButton aria-label={"more"} icon={<BsThreeDots size="25px" />}>
 
